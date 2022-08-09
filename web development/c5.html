@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is form tutorial</h2>
+    <form action="backend.php">
+        <!--Label is used in order to point the parametre by clicmking on it-->
+        <label for="name">Name :</label>
+        <div>
+        <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+        role: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+        myemail:<input type="text" name="myemail" >
+        </div>
+        <br>
+        <br>
+        <div>
+            date : <input type="date" name="mydate">
+        </div>
+        <div>
+            bonus: <input type="number" name="myno" >
+        </div>
+        <div>
+            Are you 18+<input type="checkbox" name="mycheckbox">
+        </div>
+        <br>
+        <div>
+            male<input type="radio" name="mygender" > female <input type="radio" name="mygender"> other <input type="radio" name="mygender">
+        </div>
+        <div>
+        Write about yourself: <br><textarea name="mytext" cols="60" rows="10">
+            </textarea>
+        </div>
+        <label for="company">Company name:</label>
+        <select name="company" id="company">
+            <option value="infosys">INFOSYS</option>
+            <option value="capgemini">CAPGEMINI</option>
+            <option value="tcs">TCS</option>
+        </select>
+        <div>
+            <input type="submit" value="submitnow">
+        </div>
+        <div>
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+</html>
