@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        header{
+            border: 2px solid gray;
+            /*the header is block element ,if we try to set it into middle of page using margin  auto then it will not work...so 
+            we have to make use of width to set it  into middle  */
+            /*In inline element we cannot set width but in block element we can set width.In block elements width and margin auto
+            together sets the context in middle*/
+            margin: auto;
+            width: 1200px;
+
+        }
+        img{
+            /*we can set the element as block or inline using DISPLAY */
+            display: block;
+            width: 90px;
+            margin:auto;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .box{
+            border: 3px solid black;
+            background-color: blanchedalmond;
+            margin: 20px;
+            width: 300px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .container{
+            margin: auto;
+            /*the width of header and container is same becoz responsiveness should be correct*/
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+     <header class="top">
+
+        <h3>Welcome to kunals website</h3>
+        <img src="https://cdn5.vectorstock.com/i/1000x1000/35/04/chhatrapati-shivaji-maharaj-jayanti-sunset-vector-34473504.jpg" alt="">
+     </header>
+     <div class="container">
+        <div class="box">
+        <h3 class="head">Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa recusandae at, modi earum cum excepturi non distinctio minus, ipsum nesciunt explicabo? Incidunt perferendis obcaecati ipsam doloremque, voluptas atque voluptates in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium mollitia sunt, molestiae tenetur molestias, maxime cumque velit eaque enim aliquam animi iure earum! Vitae, commodi. Sequi vero placeat iste?</p>
+        </div>
+        <div class="box">
+            <h3 class="head">Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste dicta adipisci ipsam quaerat dolor obcaecati? Debitis dignissimos reprehenderit, labore aut saepe nesciunt autem a accusantium cum molestias quasi, fugiat minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium mollitia sunt, molestiae tenetur molestias, maxime cumque velit eaque enim aliquam animi iure earum! Vitae, commodi. Sequi vero placeat iste?</p>
+            </div>
+        <div class="box">
+                <h3 class="head">Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nihil aperiam beatae commodi praesentium autem eligendi officiis, quia neque molestias eaque dolorum, iste dolor minus. Blanditiis dolorum ducimus optio odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium mollitia sunt, molestiae tenetur molestias, maxime cumque velit eaque enim aliquam animi iure earum! Vitae, commodi. Sequi vero placeat iste?</p>
+                </div>
+    </div>
+</body>
+</html>
