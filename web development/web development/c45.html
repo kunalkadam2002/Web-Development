@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        @media only screen and (max-width: 300px){
+            body{
+             background-color: rgb(255, 71, 47); 
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            body{
+            background-color: rgb(79, 22, 211);
+            }
+            .container{
+                grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }           
+        }
+        @media only screen and (min-width: 500px) and (max-width: 800px){
+            body{
+             background-color: rgba(200, 203, 21, 0.862);
+            }
+            .container{
+                grid-template-areas:  
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (min-width: 800px){
+            body{            
+             background-color: rgb(39, 181, 36);
+            }
+            
+        }
+        .bdr{
+            background-color: burlywood;
+            border: 2px solid black;
+           padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <navbar class="bdr">
+           <span>Home</span>
+           <span>Services</span>
+           <span>About us</span>
+           <span>Contact</span>
+        </navbar>
+        <section class="bdr">
+           Learn CSS in html
+        </section>
+        <aside class="bdr">
+            More about us
+        </aside>
+        <footer class="bdr">
+            Lorem ipsum dolor sit.
+        </footer>
+
+    </div>
+</body>
+</html>

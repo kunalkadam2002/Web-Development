@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+        }
+        div li p{
+            background-color: rgb(30, 181, 42);
+            color: rgb(240, 190, 203);
+        }
+
+
+        /* Here when we use div > p then it means that direct child of div which is <P> is called ;  
+        the <P> in ul is not called becoz its not direct child of div*/
+        div > p{
+            background-color: blanchedalmond;
+            color: aqua;
+        }
+
+        /*here when we use div + p then those paras wil be called which are present right after div */
+        div + p{
+            color: greenyellow;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+   <div class="container">
+    <div class="row">
+        <ul>
+            <li class="item"><p>This is another para</p></li>
+            <li class="item">This is not affected</li>
+        </ul>
+        <p>This is 1st para</p>
+    </div>
+    <p>This is 2nd para</p>
+   </div>
+   <p>This is 3rd para</p>
+</body>
+</html>

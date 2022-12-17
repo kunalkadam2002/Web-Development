@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About us</li>
+            <li>More</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another container
+    </div>
+    <script>
+        let main1=document.getElementById('main');
+        console.log(main);
+
+        //we can change elements ex nav.innerHTML="<li>Dynamic element</li>" on console :
+        let nav1=document.getElementById('nav');
+        console.log(nav);
+
+        //Here we get collection of containers and we can access 0th and 1th index container by using : containerss[0] and containerss[1]
+        let containerss=document.getElementsByClassName('container');
+        console.log(containerss);
+
+        //we can access dom elements using querySelector also
+        let sel=document.querySelector('.container');
+        console.log(sel);
+        
+        let sel2=document.querySelector('#nav>li');    
+        console.log(sel2);
+
+        //queryselector() will only select 1st value in code in order to get all values we can use querySelectorAll()
+        //we can also change value in html from console ex: sel3[0].innerHTML="Welcome"  this will change home to Welcome
+        let sel3=document.querySelectorAll('#nav>li');
+        console.log(sel3);
+
+    </script>
+</body>
+</html>

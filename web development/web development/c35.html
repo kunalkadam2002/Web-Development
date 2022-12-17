@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and custom properties</title>
+    <style>
+        :root{
+            /*variables declared in root can be used overall in code*/
+            --primarycolor: blue;
+            --dangercolor:red;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            /*We can use this --boxcolor variable anywhere inside box we cant use in container in order to use it in container we need to declare it in container*/
+            --boxcolor: yellow;
+            background-color: var(--boxcolor);
+
+            background-color: var(--primarycolor);
+            padding: 12px 13px;
+            margin: 12px 13px;
+            border: 2px solid var(--dangercolor);
+            width: 150px;
+            height: 200px;
+            box-shadow: 3px 4px var(--boxcolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+</html>

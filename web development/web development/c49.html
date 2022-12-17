@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is use of strings in JS</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aperiam impedit eveniet repudiandae, voluptates voluptas officia amet id nisi in enim aut, unde debitis magnam sapiente nulla nam perspiciatis ad?</p>
+    </div>
+    <script>
+        var string='This';
+        var name='Kunal';
+        var channel='Codewithharry';
+        var message='Kunal is good boy';
+        console.log(string+name+channel+message);
+        var temp=`${name} is a very goood boy and learns web development from ${channel}`;
+        console.log(temp);
+
+        console.log("Hello guys\n chai\tpilo");
+
+        var x=new String("This is string constructor");
+        console.log(x);
+
+        var y=name.length;
+        console.log(y);
+        //WE an insert values into html by this tag
+        document.getElementById('content').innerHTML='<h3>this is an h3 heading</h3>';
+    </script>
+</body>
+
+</html>

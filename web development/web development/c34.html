@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            
+            background-color: hotpink;
+            padding: 12px 23px;
+            margin: 12px 23px;
+            /*Adds shadow to the box in right bottom corner*/
+            box-shadow: 12px 13px rgb(174, 131, 214);
+            /*Adds shadow to the box in lrft upper corner*/
+            box-shadow: -12px -13px rgb(174, 131, 214);
+
+            /*This gives us a blury shadow*/
+            box-shadow: 12px 13px 20px yellow;
+
+            /*This gives us spreaded blury shadow*/
+            box-shadow: 12px 13px 20px 13px blue;
+
+        }
+        h2{
+            text-shadow: 1px 2px white;
+            text-shadow: 1px 2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis, ad ea earum, eius recusandae, iure laudantium aut at sit facere amet consectetur accusantium! Modi est necessitatibus reprehenderit laudantium, delectus et nostrum aut repellendus!
+            </p>
+        </div>
+        <div class="card" id="card-1">
+            <h2>Card2</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis, ad ea earum, eius recusandae, iure laudantium aut at sit facere amet consectetur accusantium! Modi est necessitatibus reprehenderit laudantium, delectus et nostrum aut repellendus!
+            </p>
+        </div>
+        <div class="card" id="card-1">
+            <h2>Card3</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis, ad ea earum, eius recusandae, iure laudantium aut at sit facere amet consectetur accusantium! Modi est necessitatibus reprehenderit laudantium, delectus et nostrum aut repellendus!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

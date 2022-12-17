@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts using grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar' 
+            'services services services aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #services{
+            grid-area: services;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="navbar" class="item">
+            Home About us Services Contact
+        </div>
+        <div id="services" class="item">
+            Lorem ipsum dolor sit, tiae error nam distinctio?
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem quidem omnis eveniet. Illo tempora ad blanditiis iste magnam ab eligendi mollitia neque vitae ipsa, adipisci dolore quod minima porro, rerum officiis eaque aspernatur nostrum tenetur consequatur sunt dolorum laudantium ut. Maxime, et maiores magnam nesciunt soluta dignissimos est vitae illo tempora sint nihil amet officiis sed fuga error delectus non deleniti atque exercitationem reiciendis perferendis, quibusdam, laudantium minima ea! Laboriosam magnam possimus reiciendis assumenda exercitationem dolore id alias ea accusantium enim. Aspernatur itaque unde sint, amet laudantium beatae iste vitae, est maiores impedit et nesciunt culpa ratione quasi dolores. Quibusdam ipsam officia itaque dignissimos distinctio expedita quam amet vitae veniam praesentium, ab sed minus eum, iusto laboriosam corrupti iste accusamus impedit soluta, illo porro at! Ipsa accusamus ad molestiae. Eveniet nisi velit illo voluptatem ratione repellat facere accusantium sapiente soluta esse voluptatum dolor eos ad distinctio, magnam ipsum nobis amet eius. Ad dolore fugiat aut rerum asperiores dolorum amet incidunt minus iure deleniti? Quibusdam molestiae, rerum nisi sed veritatis totam soluta, nobis repellat, iusto velit a ipsa vero eligendi ratione dignissimos magnam illo assumenda optio. Veritatis molestias asperiores molestiae impedit quia labore at non, temporibus natus praesentium unde! Enim!
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus laboriosam in!</footer>
+    </div>
+</body>
+</html>

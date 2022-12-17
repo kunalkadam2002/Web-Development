@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        .container{
+         border: 2px solid red;
+         background-color: bisque;
+         height: 3900px;   
+        }
+      .box{
+            border: 2px solid blueviolet;
+            margin: 30px;
+            width: 200px;
+            height: 30px;
+            display: inline-block;
+        }
+        #box3{
+            /*relative postion : relative to its normal position and will leave a gap at its normal position 
+            position: relative;
+            top: 30px;
+            left: 20px;*/
+            
+            /*relative to position of its first parent 
+            position: absolute;
+            top: 30px;
+            left: 20px; */
+
+            /*position relative to browser window in fixed position the box remains fixed at its position 
+            position: fixed;
+            right: 20px;*/
+
+            /*this sticks the box or content on top*/
+            position: sticky;
+            top: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and Cleartimeout</title>
+</head>
+<body>
+    <!-- setTimeout: this will run the function only once after the particular interval of time
+    clearTimeot: this will run the function repeatedly after particular interval of time -->
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+      console.log("This is 58th tutorial")
+      function f1(name,byetext){
+        console.log("hlo guys good morning!! "+name+" "+byetext);
+      }
+      //while defining func in stetimeout do not use () it will give us error
+      //setTimeout(f1,5000,"Avantika","Bye bye!!");
+
+      timeOut=setTimeout(f1,5000,"Avantika","Bye bye!!");
+      console.log(timeOut);
+
+      //we can clear the timout id returned by settimeout as follows:
+      clearTimeout(timeOut);
+
+      intervalId=setInterval(f1,1000,"Avantika","Bye bye!!")
+      clearInterval(intervalId);
+
+      //displaying time
+
+      function disptime(){
+        time=new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML= time;
+      }
+      setInterval(disptime,1000);
+
+    </script>
+</body>
+</html>

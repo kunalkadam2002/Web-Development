@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        Welcome to JS tutorial
+    </div>
+    <script>
+        // function f1(){
+        //     console.log("Good night");
+        // }
+        // f1();
+        f1=()=>{
+            console.log("Good night");
+        }
+        //we can write this like this also
+        f2=()=>console.log("We can use this tech also")
+        f1();
+        f2();
+
+        setTimeout(()=>{
+            console.log("We are in settimeout")
+        },3000);
+
+        let sum1=(a,b)=>{
+            return a*b;
+        };
+        //we can write iyt like this
+        let sum2=(a,b)=>a*b;
+
+        let obj1={
+            greet:"Good morning",
+            names:["Kunal","Swapnil","Mayur","Sagar"],
+            speak1(){
+                this.names.forEach((student)=>{
+                    console.log(this.greet+" Hlo "+student);
+                });
+            }
+        }
+        obj1.speak1();
+    </script>
+</body>
+</html>

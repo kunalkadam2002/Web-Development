@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else conditions and case statements</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+       var s1='kunal';
+        var s1='kunal1';
+        console.log(s1);
+
+        // this let which is declared outside the let block can be accessed globally 
+        let a1='avantika'
+        {
+            // the let which is inside let block can be accessed into block only and not outside the let block
+            let a1='kunal'
+            console.log(a1);
+        }
+        console.log(a1);
+
+        /*if we try to change const then its will show a error const remains same throughout the code,we can use const in the situation 
+          where the const we needed should be same in entire code
+        const x='sameep';
+        const x='ninad';*/
+
+        const y=2
+        if(y>75)
+          console.log('You are not a defaulter');
+        else if(y==75)
+          console.log('You are at katav');
+        else if(y==2)
+           console.log('You are expelled from course');
+        else 
+         console.log('You are a defaulter');
+
+         const day=0s
+         switch (day) {
+            case 1:
+                console.log("Monday");
+                break;
+
+                case 2:
+                console.log("Tuesday");
+                break;
+               
+                case 3:
+                console.log("Wednesday");
+                break;
+
+                case 4:
+                console.log("Thursday");
+                break;
+
+                case 5:
+                console.log("Friday");
+                break;
+
+                case 6:
+                console.log("Saturday");
+                break;
+
+                case 7:
+                console.log("Sunday");
+                break;
+         
+            default:
+                 console.log("Plz enter valid no");
+                break;
+         }
+    </script>
+</body>
+</html>

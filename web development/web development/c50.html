@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string functions</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var str="This is kunal from dypit";
+   // var positn=str.indexOf('kunal');
+   var positn=str.lastIndexOf('kunal');
+
+   //this will return string from 3 to 7
+   var substr1=str.slice(3,7);
+   console.log(substr1);
+
+   var substr2=str.substring(3,7);
+   console.log(substr2);
+
+   var substr3=str.substr(3,7);
+   console.log(substr3);
+
+    console.log(positn);
+
+    //This will not change original string but it will create changes in new string according to condition
+    var replaced1=str.replace('This','That');
+    console.log(replaced1);
+
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    var n1=str.concat('hi guys');
+    console.log(n1);
+
+    var strWithWhitespaces="   this contains      whitespaces    ";
+    console.log(strWithWhitespaces);
+    //this func avoids spaces aft first and last of string
+    console.log(strWithWhitespaces.trim());
+
+    var char1=str.charAt(2);
+    console.log(char1);
+
+
+
+</script>
+</html>
